@@ -1,0 +1,7 @@
+2018-07-15 22:11:33.595 PDT [6676] LOG:  database system was shut down at 2018-07-15 22:10:59 PDT
+2018-07-15 22:11:33.623 PDT [5696] LOG:  database system is ready to accept connections
+2018-07-15 23:46:45.410 PDT [5696] LOG:  received fast shutdown request
+2018-07-15 23:46:45.428 PDT [5696] LOG:  aborting any active transactions
+2018-07-15 23:46:45.430 PDT [5696] LOG:  worker process: logical replication launcher (PID 6872) exited with exit code 1
+2018-07-15 23:46:45.441 PDT [6808] LOG:  shutting down
+2018-07-15 23:46:45.497 PDT [5696] LOG:  database system is shut down

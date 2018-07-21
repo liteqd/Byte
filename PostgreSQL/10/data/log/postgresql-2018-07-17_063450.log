@@ -1,0 +1,40 @@
+2018-07-17 06:34:50.196 PDT [7112] LOG:  database system was shut down at 2018-07-16 21:28:36 PDT
+2018-07-17 06:34:50.231 PDT [6348] LOG:  database system is ready to accept connections
+2018-07-17 11:22:04.842 PDT [9872] ERROR:  function pg_catalog.trigger_in() does not exist
+2018-07-17 11:22:04.842 PDT [9872] STATEMENT:  CREATE CONSTRAINT TRIGGER id
+	    AFTER INSERT
+	    ON public."Subscriber Account"
+	    FOR EACH ROW
+	    EXECUTE PROCEDURE pg_catalog.trigger_in();
+	
+	COMMENT ON TRIGGER id ON public."Subscriber Account"
+	    IS 'Auto populate the id field';
+	
+2018-07-17 11:24:48.092 PDT [9872] ERROR:  access method "hash" does not support unique indexes
+2018-07-17 11:24:48.092 PDT [9872] STATEMENT:  CREATE UNIQUE INDEX id
+	    ON public."Subscriber Account" USING hash
+	    (id)
+	    TABLESPACE pg_default;
+2018-07-17 11:25:12.424 PDT [9872] ERROR:  access method "gist" does not support unique indexes
+2018-07-17 11:25:12.424 PDT [9872] STATEMENT:  CREATE UNIQUE INDEX id
+	    ON public."Subscriber Account" USING gist
+	    (id)
+	    TABLESPACE pg_default;
+2018-07-17 21:12:17.259 PDT [6336] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-07-17 21:12:17.260 PDT [7876] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-07-17 21:12:17.260 PDT [9872] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-07-17 21:12:17.265 PDT [1824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-07-17 21:12:17.267 PDT [460] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-07-17 21:12:17.268 PDT [7420] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-07-17 21:12:18.778 PDT [6348] LOG:  received fast shutdown request
+2018-07-17 21:12:18.779 PDT [7132] ERROR:  canceling statement due to user request
+2018-07-17 21:12:18.784 PDT [6348] LOG:  aborting any active transactions
+2018-07-17 21:12:18.789 PDT [6348] LOG:  worker process: logical replication launcher (PID 7132) exited with exit code 1
+2018-07-17 21:12:18.797 PDT [6996] LOG:  shutting down
+2018-07-17 21:12:18.928 PDT [6348] LOG:  database system is shut down
